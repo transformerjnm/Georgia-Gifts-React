@@ -1,22 +1,22 @@
 
+@import '../../../assets/assets.module.scss';
+
 nav {
-    background-color: var(--off-white);
+    background-color: $off-white;
     box-shadow: 0 .5rem .5rem  lightgrey;
 }
 
 .fa-shopping-cart{
-    font-size: var(--font1);
-    color: var(--accent-color);
+    font-size: $font1;
+    color: $accent-color;
 }
-
-a, a:visited, i {
-    color: var(--text-color);
-    transition: all .15s ease-in-out;
-}
-
-a:hover, a:focus {
-    color: var(--accent-color);
-    transform: scale(1.05);
+.navLink {
+    color: $text-color !important;
+    transition: all .15s ease-in-out ;
+    &:hover, &:focus {
+        color: $accent-color !important;
+        transform: scale(1.05) ;
+    }
 }
 
 i:hover, i:focus {

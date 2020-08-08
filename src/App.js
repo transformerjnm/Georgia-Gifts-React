@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './container/header/Header';
 import MainContent from './container/maincontent/MainContent';
 import Footer from './components/footer/Footer';
-import './App.module.scss';
+import "./App.scss";
 
 
 function App() {
