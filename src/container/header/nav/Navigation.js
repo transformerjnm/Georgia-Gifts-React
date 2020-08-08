@@ -3,12 +3,13 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    NavbarText
+    NavLink
   } from 'reactstrap';
+
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
   import styles from './nav.module.scss';
 
 
@@ -32,8 +33,8 @@ const Navigation = () => {
             <NavItem>
               <NavLink  className={styles.navLink} href="#">Contact</NavLink>
             </NavItem>
-          </Nav>
-          <a href="cart.html"> <i className="fa fa-shopping-cart" aria-hidden="true" aria-label="shopping cart image to open shopping cart"></i> </a>
+          </Nav>        
+          <FontAwesomeIcon icon={faShoppingCart} className={styles.cart}/>
         </Collapse>
       </Navbar>   
     
