@@ -1,28 +1,28 @@
-@import './assets/assets.module.scss';
+@import '../public/assets/assets.module.scss';
 body {
-    font-family: var(--reading-font);
-    color: var(--text-color);
-    font-size: var(--font0);
+    font-family: $reading-font;
+    color: $text-color;
+    font-size: $font0;
 }
 h1{
-    font-size: var(--font3);
+    font-size: $font3;
 }
 h2{
-    font-size: var(--font2);
+    font-size: $font2;
 }
 h1, h2, h4 {
-    color: var(--accent-color);
-    font-family: var(--header-font);
+    color: $accent-color;
+    font-family: $header-font;
 }
 p {
-    font-size: var(--font1);
+    font-size: $font1;
 }
 a, a:visited, i {
-    color: var(--text-color);
+    color: $text-color;
     transition: all .15s ease-in-out;
 }
 a:hover, a:focus {
-    color: var(--accent-color);
+    color: $accent-color;
     transform: scale(1.05);
 }
 i:hover, i:focus {

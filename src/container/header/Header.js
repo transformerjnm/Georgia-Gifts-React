@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './header.module.scss';
 import Nav from './nav/Navigation';
+import HeroContent from './herocontent/HeroContent';
 
 const Header = () => {
 
     return(
-        <Nav />
+        <Fragment>
+            <Nav />
+            <HeroContent />
+        </Fragment>    
     );
 
 };
