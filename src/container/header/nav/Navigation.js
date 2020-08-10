@@ -7,19 +7,16 @@ import {
     NavItem,
     NavLink
   } from 'reactstrap';
-
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
   import styles from './nav.module.scss';
-
 
 const Navigation = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-    return(
-      
+    return(   
       <Navbar color="light" light expand="md">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -37,7 +34,6 @@ const Navigation = () => {
           <FontAwesomeIcon icon={faShoppingCart} className={styles.cart}/>
         </Collapse>
       </Navbar>   
-    
     );
 
 };

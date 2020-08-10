@@ -8,16 +8,12 @@ import "./App.scss";
 
 function App() {
 
-  return (
-    
+  return ( 
     <Fragment>
-
       <Header />
       <MainContent />
       <Footer />
-
-    </Fragment>
-    
+    </Fragment>  
   );
 
 };
