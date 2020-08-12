@@ -12,9 +12,9 @@ function App() {
     <Fragment>
 		<BrowserRouter>
     		<Header /> 	
-        	<MainContent />
-      	</BrowserRouter>
-      	<Footer />
+        	<MainContent />    	
+      		<Footer />
+		</BrowserRouter>
     </Fragment>  
   );
 

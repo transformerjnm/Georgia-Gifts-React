@@ -22,13 +22,13 @@ const Navigation = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink className={styles.navLink + " nav-link"} to="/">Home</NavLink>
+                <NavLink exact activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink  className={styles.navLink + " nav-link"} to="/about">About</NavLink>
+                <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink  className={styles.navLink + " nav-link"} to="/contact">Contact</NavLink>
+                <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/contact">Contact</NavLink>
               </NavItem>
             </Nav>        
             <FontAwesomeIcon icon={faShoppingCart} className={styles.cart}/>

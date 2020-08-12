@@ -3,9 +3,9 @@ import styles from './footer.module.scss';
 import { Row, Col } from 'reactstrap';
 import {
     Nav,
-    NavItem,
-    NavLink
-  } from 'reactstrap';
+    NavItem
+} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -31,17 +31,17 @@ const Footer = () => {
                     <br></br><br></br>                 
                 </Col>
                 <Col sm="4" className="align-self-center my-3">
-                        <Nav className="text-center" navbar>
-                            <NavItem>
-                                <NavLink href="#">Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#">About</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#">Contact</NavLink>
-                            </NavItem>
-                        </Nav>          
+                    <Nav className="mr-auto" navbar>
+                        <NavItem>
+                            <NavLink exact activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/">Home</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/about">About</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/contact">Contact</NavLink>
+                        </NavItem>
+                    </Nav>         
                 </Col>               
             </Row>
             <div class="text-center mt-3">
