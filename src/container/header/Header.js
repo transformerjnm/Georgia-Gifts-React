@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import styles from './header.module.scss';
-import Nav from './nav/Navigation';
-import HeroContent from './herocontent/HeroContent';
+import Nav from '../../components/nav/Navigation';
+import HeroContent from '../../components/herocontent/HeroContent';
 
 const Header = () => {
 
