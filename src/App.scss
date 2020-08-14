@@ -17,7 +17,6 @@ h1, h2, h4 {
 p {
     font-size: $font1;
 }
-
 a, a:visited, i {
     color: $text-color;
     transition: all .15s ease-in-out;
@@ -28,4 +27,12 @@ a:hover, a:focus {
 }
 i:hover, i:focus {
     transform: scale(1.2);
+}
+.btn {
+    background-color: $accent-color;
+    color: $off-white;
+    transition: all .25s ease-in-out;
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
 }
