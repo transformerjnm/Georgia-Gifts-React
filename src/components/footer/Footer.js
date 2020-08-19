@@ -12,7 +12,7 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 const Footer = () => {
 
     return(
-        <footer class="container-fluid ">
+        <footer className="container-fluid ">
             <Row>
                 <Col sm="4" className=" align-self-center my-3 text-center">
                     <a href="mailto:#"><span>GAGifts@gmail.com</span></a>
@@ -44,7 +44,7 @@ const Footer = () => {
                     </Nav>         
                 </Col>               
             </Row>
-            <div class="text-center mt-3">
+            <div className="text-center mt-3">
                 <span>&copy; Copyright 2020 Georgia Gifts</span>
             </div>
         </footer>

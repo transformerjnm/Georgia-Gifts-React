@@ -3,8 +3,9 @@ import styles from './mainContent.module.scss';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../components/home/Home';
 import About from '../../components/about/About';
-const MainContent = () => {
+import Contact from '../../components/contact/Contact';
 
+const MainContent = () => {
     return(
         <Switch>
             <Route exact path='/' >
@@ -12,11 +13,13 @@ const MainContent = () => {
             </Route>
             <Route path='/about' >
                 <About />
-            </Route>                  
+            </Route>
+            <Route path='/contact' >
+                <Contact />
+            </Route>                   
             <Redirect to='/' />
         </Switch>              
     );
-
 };
 
 export default MainContent;
