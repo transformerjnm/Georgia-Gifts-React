@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import products from '../../shared/products';
 import Card from '../productCard/ProductCard';
+import ContactForm from '../form/ContactForm';
 
 const Home = () => {
 
@@ -9,7 +10,7 @@ const Home = () => {
         let bestSellers = products.filter( product => product.bestSeller === true );
         let bestSellersCards = bestSellers.map( (product) => {
             return(
-                <Card price={product.price} description={product.description} title={product.title} imgSrc={product.imgSrc} imgAlt={product.imgAlt}/>
+                <Card key={product.id} price={product.price} description={product.description} title={product.title} imgSrc={product.imgSrc} imgAlt={product.imgAlt}/>
             );
         });
         return bestSellersCards;
@@ -18,12 +19,13 @@ const Home = () => {
     return(
         <Fragment>
             <Container>
-                <h2 class="text-center my-5 py-5">Best Sellers</h2>
-                <Row>
-                    
-                            {getFeaturedProducts()}
-                    
+                <h2 className="text-center my-5 py-5">Best Sellers</h2>
+                <Row>                 
+                    {getFeaturedProducts()}                  
                 </Row>
+            </Container>
+            <Container>
+                <ContactForm />
             </Container>
         </Fragment>
     );
