@@ -7,15 +7,21 @@ class ContactForm extends Component {
     state = {
         name: null,
         email: null,
-        helpMsg: null,
-        productType: null,
-        requestMsg: null,
+        sAddress: null,
+        bAddress: null,
+        cardName: null,
+        cardNum: null,
+        cardDate: null,
+        cardCvv: null,
         errors: {
             name: null,
             email: null,
-            helpMsg: null,
-            productType: null,
-            requestMsg: null,
+            sAddress: null,
+            bAddress: null,
+            cardName: null,
+            cardNum: null,
+            cardDate: null,
+            cardCvv: null,
         },
     };
 
@@ -36,7 +42,6 @@ class ContactForm extends Component {
         return true;
     };
 
-
     onBlur = (event) => {
         let target = event.target;
         if ( this.validateInput(target) ){
@@ -46,14 +51,14 @@ class ContactForm extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        alert(`Thank you ${this.state.name}. We will get in touch with you at ${this.state.email}.`);
+        alert(`Thank you ${this.state.name}. Your Order will be shipped soon. Email confirmation will be sent to ${this.state.email}.`);
     }
 
     render(){
         let errors = this.state.errors;
         return(
             <Fragment>
-                <h2 className="text-center my-5 py-5">Let's Become Friends!</h2>
+                <h2 className="text-center my-5 py-5">Checkout Order Below!</h2>
                 <Form className="p-5 my-5 mx-auto" onSubmit={this.onSubmit}>
                     <FormGroup className="mb-5">
                         <h4>Who are you?</h4>
@@ -65,18 +70,22 @@ class ContactForm extends Component {
                         <FormFeedback className={styles.feedback}>{errors.email}</FormFeedback>
                     </FormGroup>
                     <FormGroup className="mt-5">
-                        <h4 className="mt-5">What do you need today?</h4>
-                        <Label className="mt-4"  for="helpMsg">How may we help you? </Label>
-                        <Input className="form-control mb-4" type="textarea" name="helpMsg" id="helpMsg" rows="10" onBlur={this.onBlur} spellCheck="true"/>
-                        <Label className="mt-4"  for="productType">Product Type </Label>
-                        <Input type="select" className="form-control custom-select mb-4" name="productType" id="productType" onBlur={this.onBlur}>
-                            <option value="">Please Select One</option>
-                            <option value="Shirt">Shirt</option>
-                            <option value="Mason Jar">Mason Jar</option>
-                            <option value="Soap">Soap</option>
-                        </Input>
-                        <Label className="mt-4"  for="requestMsg">Custom Product Request </Label>
-                        <Input className="form-control mb-4" type="textarea" name="requestMsg" id="requestMsg" rows="10" onBlur={this.onBlur} spellCheck="true"/>
+                        <h4 className="mt-5">Where can we ship your goods?</h4>
+                        <Label className="mt-4"  for="sAddress">Shipping Address * </Label>
+                        <Input className="form-control mb-4" type="text" name="sAddress" id="sAddress" onBlur={this.onBlur} spellCheck="true" required/>
+                        <Label className="mt-4"  for="bAddress">Billing Address * </Label>
+                        <Input className="form-control mb-4" type="text" name="bAddress" id="bAddress" onBlur={this.onBlur} spellCheck="true" required/>
+                    </FormGroup>
+                    <FormGroup>
+                        <h4 className="mt-5">How are you paying today?</h4>
+                        <Label className="mt-4"  for="cardName">Name on Card * </Label>
+                        <Input className="form-control mb-4" type="text" name="cardName" id="cardName" onBlur={this.onBlur} spellCheck="true" required/>
+                        <Label className="mt-4"  for="cardNum">Card Number * </Label>
+                        <Input className="form-control mb-4" type="text" name="cardNum" id="cardNum" onBlur={this.onBlur} spellCheck="true" required/>
+                        <Label className="mt-4"  for="cardDate">Card Expression Date * </Label>
+                        <Input className="form-control mb-4" type="text" name="cardDate" id="cardDate" onBlur={this.onBlur} spellCheck="true" required/>
+                        <Label className="mt-4"  for="cardCvv">Card CVV * </Label>
+                        <Input className="form-control mb-4" type="text" name="cardCvv" id="cardCvv" onBlur={this.onBlur} spellCheck="true" required/>
                     </FormGroup>
                     <Button type="submit" className="btn">Submit</Button>
                 </Form>
