@@ -32,7 +32,7 @@ i:hover, i:focus {
     background-color: $accent-color;
     color: $off-white;
     transition: all .25s ease-in-out;
-    border: none
+    border: none;
     &:hover, &:focus {
         transform: scale(1.1);
     }
