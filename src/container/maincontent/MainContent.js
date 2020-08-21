@@ -19,10 +19,18 @@ class MainContent extends Component {
             this.setState( {cartItemsIds: newCart } ) ;     
         };
 
+        let clearCart = () => this.setState({ cartItemsIds: []});
+
         let removeCartItem = (cartItemId) => {
-            let index = this.state.cartItemsIds.indexOf(cartItemId);
-            this.setState({ cartItemsIds: this.state.cartItemsIds.splice(index, 1) });
+            if(this.state.cartItemsIds.length === 1){
+                clearCart();
+            } else {
+                let index = this.state.cartItemsIds.indexOf(cartItemId);
+                this.setState({ cartItemsIds: this.state.cartItemsIds.splice(index, 1) });
+            }
         };
+
+        
         return(
             <Switch>
                 <Route exact path='/' >
@@ -35,7 +43,7 @@ class MainContent extends Component {
                     <Contact />
                 </Route>
                 <Route path='/cart' >
-                    <Cart getCartItemsId={getCartItemsId} removeCartItem={removeCartItem}/>
+                    <Cart getCartItemsId={getCartItemsId} removeCartItem={removeCartItem} clearCart={clearCart}/>
                 </Route>                     
                 <Redirect to='/' />
             </Switch>              
