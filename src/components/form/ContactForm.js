@@ -47,20 +47,25 @@ class ContactForm extends Component {
         }
     };
 
+    onSubmit = (event) => {
+        event.preventDefault();
+        alert(`Thank you ${this.state.name}. We will get in touch with you at ${this.state.email}.`);
+    }
+
     render(){
         let errors = this.state.errors;
         return(
             <Fragment>
                 <h2 className="text-center my-5 py-5">Let's Become Friends!</h2>
-                <Form className="p-5 my-5 mx-auto">
+                <Form className="p-5 my-5 mx-auto" onSubmit={this.onSubmit}>
                     <FormGroup className="mb-5">
                         <h4>Who are you?</h4>
                         <Label className="mt-4"  for="name" > Your Name *</Label>
                         <Input className="form-control mb-4" type="text" name="name" id="name" maxLength="60" required invalid={errors.name} onBlur={this.onBlur}/>
-                        <FormFeedback>{errors.name}</FormFeedback>
+                        <FormFeedback className={styles.feedback}>{errors.name}</FormFeedback>
                         <Label className="mt-4" for="email">Your Email *</Label>
                         <Input className="form-control mb-4" type="email" name="email" id="email" required invalid={errors.email} onBlur={this.onBlur}/>
-                        <FormFeedback>{errors.email}</FormFeedback>
+                        <FormFeedback className={styles.feedback}>{errors.email}</FormFeedback>
                     </FormGroup>
                     <FormGroup className="mt-5">
                         <h4 className="mt-5">What do you need today?</h4>

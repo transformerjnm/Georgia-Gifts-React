@@ -6,7 +6,7 @@ import {
     Nav,
     NavItem
   } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styles from './nav.module.scss';
@@ -31,7 +31,7 @@ const Navigation = () => {
                 <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/contact">Contact</NavLink>
               </NavItem>
             </Nav>        
-            <FontAwesomeIcon icon={faShoppingCart} className={styles.cart}/>
+            <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} className={styles.cart}/></Link>
           </Collapse>
         </Navbar>    
     );
