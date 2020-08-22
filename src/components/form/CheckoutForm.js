@@ -1,7 +1,6 @@
 import React, {Fragment, Component} from 'react';
 import styles from './contactForm.module.scss';
 import { Button, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
-import { validateLocaleAndSetLanguage } from 'typescript';
 
 class ContactForm extends Component {
     state = {
@@ -54,9 +53,9 @@ class ContactForm extends Component {
         alert(`Thank you ${this.state.name}. Your Order will be shipped soon. Email confirmation will be sent to ${this.state.email}.`);
     }
 
-    render(){
+    render() {
         let errors = this.state.errors;
-        return(
+        return (
             <Fragment>
                 <h2 className="text-center my-5 py-5">Checkout Order Below!</h2>
                 <Form className="p-5 my-5 mx-auto" onSubmit={this.onSubmit}>

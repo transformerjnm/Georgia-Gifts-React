@@ -12,7 +12,6 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styles from './nav.module.scss';
 
 const Navigation = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -35,7 +34,6 @@ const Navigation = () => {
           </Collapse>
         </Navbar>    
     );
-
 };
 
 export default Navigation;

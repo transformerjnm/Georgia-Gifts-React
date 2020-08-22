@@ -7,7 +7,6 @@ import "./App.scss";
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-
   return ( 
     <Fragment>
 		<BrowserRouter>
@@ -17,7 +16,6 @@ function App() {
 		</BrowserRouter>
     </Fragment>  
   );
-
 };
 
 export default App;

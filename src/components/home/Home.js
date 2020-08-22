@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import { Row, Col, Container } from 'reactstrap';
+import { Row, Container } from 'reactstrap';
 import products from '../../shared/products';
 import ProductCard from '../productCard/ProductCard';
 import ContactForm from '../form/ContactForm';
@@ -20,7 +20,7 @@ const Home = (props) => {
             <Container>
                 <h2 className="text-center my-5 py-5">Best Sellers</h2>
                 <Row>                 
-                    {getFeaturedProducts()}                  
+                    { getFeaturedProducts() }                  
                 </Row>
             </Container>
             <Container>

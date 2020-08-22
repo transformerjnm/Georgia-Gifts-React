@@ -1,7 +1,6 @@
 import React, {Fragment, Component} from 'react';
 import styles from './contactForm.module.scss';
 import { Button, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
-import { validateLocaleAndSetLanguage } from 'typescript';
 
 class ContactForm extends Component {
     state = {
@@ -36,7 +35,6 @@ class ContactForm extends Component {
         return true;
     };
 
-
     onBlur = (event) => {
         let target = event.target;
         if ( this.validateInput(target) ){
@@ -49,7 +47,7 @@ class ContactForm extends Component {
         alert(`Thank you ${this.state.name}. We will get in touch with you at ${this.state.email}.`);
     }
 
-    render(){
+    render() {
         let errors = this.state.errors;
         return(
             <Fragment>

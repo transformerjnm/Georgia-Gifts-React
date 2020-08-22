@@ -10,16 +10,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-
     return(
         <footer className="container-fluid ">
             <Row>
                 <Col sm="4" className=" align-self-center my-3 text-center">
-                    <a href="mailto:#"><span>GAGifts@gmail.com</span></a>
+                    <i><span>GAGifts@gmail.com</span></i>
                     <br></br><br></br>
-                    <a href="tel:#"><span>770-777-7777</span></a>
+                    <i><span>770-777-7777</span></i>
                     <br></br><br></br>
-                    <a href="#"><address>17 Peachy ave, Atlanta GA 30589</address></a>
+                    <i><address>17 Peachy ave, Atlanta GA 30589</address></i>
                     <br></br><br></br>
                 </Col>
                 <Col sm="4" className="align-self-center my-3 text-center ">
@@ -49,7 +48,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-
 };
 
 export default Footer;

@@ -16,12 +16,11 @@ const Cart = (props) => {
         array returned by props.getCartItemsID is all the id of the products that the user has added to cart.
         This function gets and returns the product data for all the item ids as an array of objects.
     */
-    let getProductsInfoById = () => {
-        let customerProductsInfo = [];  
+    let getProductsInfoById = () => {  
         let cartItemsId = props.getCartItemsId();
-        cartItemsId.map( (singleId) => {
+        let customerProductsInfo = cartItemsId.map( (singleId) => {
             let item = products.filter( product => product.id === singleId)
-            customerProductsInfo[customerProductsInfo.length] = item[0];
+            return item[0];
         });
         return customerProductsInfo;
     };

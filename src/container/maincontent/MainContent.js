@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from './mainContent.module.scss';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../components/home/Home';
 import About from '../../components/about/About';
@@ -10,7 +9,8 @@ class MainContent extends Component {
     state = {
         cartItemsIds: [],
     };
-    render(){
+
+    render() {
         let getCartItemsId = () => this.state.cartItemsIds;
 
         let addCartItem = ( newItemId) =>{
@@ -24,13 +24,14 @@ class MainContent extends Component {
         let removeCartItem = (cartItemId) => {
             if(this.state.cartItemsIds.length === 1){
                 clearCart();
-            } else {
+            } else {                
                 let index = this.state.cartItemsIds.indexOf(cartItemId);
-                this.setState({ cartItemsIds: this.state.cartItemsIds.splice(index, 1) });
+                let newCart = [...this.state.cartItemsIds];
+                newCart.splice(index, 1);
+                this.setState({ cartItemsIds: newCart });
             }
         };
-
-        
+       
         return(
             <Switch>
                 <Route exact path='/' >
