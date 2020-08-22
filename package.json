@@ -19,6 +19,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.5.1",
+    "typeface-open-sans": "^0.0.75",
+    "typeface-rock-salt": "^0.0.72",
     "typescript": "^3.9.7"
   },
   "scripts": {
