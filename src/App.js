@@ -4,16 +4,16 @@ import Header from './container/header/Header';
 import MainContent from './container/maincontent/MainContent';
 import Footer from './components/footer/Footer';
 import "./App.scss";
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return ( 
     <Fragment>
-		<HashRouter>
+		<BrowserRouter>
     		<Header /> 	
         	<MainContent />    	
       		<Footer />
-		</HashRouter>
+		</BrowserRouter>
     </Fragment>  
   );
 };
