@@ -34,7 +34,7 @@ class MainContent extends Component {
        
         return(
             <Switch>
-                <Route exact path='/' >
+                <Route exact path='/georgia-gifts-react' >
                     <Home addCartItem={addCartItem}/>
                 </Route>
                 <Route path='/about' >
@@ -46,7 +46,7 @@ class MainContent extends Component {
                 <Route path='/cart' >
                     <Cart getCartItemsId={getCartItemsId} removeCartItem={removeCartItem} clearCart={clearCart}/>
                 </Route>                     
-                <Redirect to='/' />
+                <Redirect to='/georgia-gifts-react' />
             </Switch>              
         );
     };

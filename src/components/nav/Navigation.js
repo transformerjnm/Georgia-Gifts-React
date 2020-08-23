@@ -21,7 +21,7 @@ const Navigation = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink exact activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/">Home</NavLink>
+                <NavLink exact activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/georgia-gifts-react">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink activeClassName={styles.active} className={styles.navLink + " nav-link"} to="/about">About</NavLink>
