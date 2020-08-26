@@ -81,7 +81,7 @@ class ContactForm extends Component {
                         <Input className="form-control mb-4" type="text" name="cardName" id="cardName" onBlur={this.onBlur} spellCheck="true" required/>
                         <Label className="mt-4"  for="cardNum">Card Number * </Label>
                         <Input className="form-control mb-4" type="text" name="cardNum" id="cardNum" onBlur={this.onBlur} spellCheck="true" required/>
-                        <Label className="mt-4"  for="cardDate">Card Expression Date * </Label>
+                        <Label className="mt-4"  for="cardDate">Card Expiration Date * </Label>
                         <Input className="form-control mb-4" type="text" name="cardDate" id="cardDate" onBlur={this.onBlur} spellCheck="true" required/>
                         <Label className="mt-4"  for="cardCvv">Card CVV * </Label>
                         <Input className="form-control mb-4" type="text" name="cardCvv" id="cardCvv" onBlur={this.onBlur} spellCheck="true" required/>
