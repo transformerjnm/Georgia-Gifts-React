@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/georgia-gifts-react/precache-manifest.ec8664b7763c295099e1d8e656a824c7.js"
+  "/georgia-gifts-react/precache-manifest.777472943282c8107f717e7ac7992d60.js"
 );
 
 self.addEventListener('message', (event) => {
