@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da800dd489599812edb14d9bb13b82ac",
+    "revision": "7d1739c158e046cb0634c988deb1d823",
     "url": "/georgia-gifts-react/index.html"
   },
   {
