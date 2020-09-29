@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/georgia-gifts-react/static/css/main.00668737.chunk.css",
+    "main.js": "/georgia-gifts-react/static/js/main.e878337e.chunk.js",
+    "main.js.map": "/georgia-gifts-react/static/js/main.e878337e.chunk.js.map",
+    "runtime-main.js": "/georgia-gifts-react/static/js/runtime-main.5d34e7fd.js",
+    "runtime-main.js.map": "/georgia-gifts-react/static/js/runtime-main.5d34e7fd.js.map",
+    "static/css/2.1f057938.chunk.css": "/georgia-gifts-react/static/css/2.1f057938.chunk.css",
+    "static/js/2.7c433c60.chunk.js": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js",
+    "static/js/2.7c433c60.chunk.js.map": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js.map",
+    "index.html": "/georgia-gifts-react/index.html",
+    "precache-manifest.452715e29e6c2ae885137192903d70b9.js": "/georgia-gifts-react/precache-manifest.452715e29e6c2ae885137192903d70b9.js",
+    "service-worker.js": "/georgia-gifts-react/service-worker.js",
+    "static/css/2.1f057938.chunk.css.map": "/georgia-gifts-react/static/css/2.1f057938.chunk.css.map",
+    "static/css/main.00668737.chunk.css.map": "/georgia-gifts-react/static/css/main.00668737.chunk.css.map",
+    "static/js/2.7c433c60.chunk.js.LICENSE.txt": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/georgia-gifts-react/static/media/rock-salt-latin-400.a3e02e52.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d34e7fd.js",
+    "static/css/2.1f057938.chunk.css",
+    "static/js/2.7c433c60.chunk.js",
+    "static/css/main.00668737.chunk.css",
+    "static/js/main.e878337e.chunk.js"
+  ]
+}
