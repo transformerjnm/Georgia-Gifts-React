@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1d350bae8f18fdb732e1a4a4614d039",
+    "revision": "869f17ae3812a537384dfe15f9ff7afb",
     "url": "/georgia-gifts-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/georgia-gifts-react/static/css/2.1f057938.chunk.css"
   },
   {
-    "revision": "1b7ba1a48dbe05fc9423",
+    "revision": "36dec9ced4eb1392b272",
     "url": "/georgia-gifts-react/static/css/main.00668737.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b7ba1a48dbe05fc9423",
-    "url": "/georgia-gifts-react/static/js/main.4eb4fabe.chunk.js"
+    "revision": "36dec9ced4eb1392b272",
+    "url": "/georgia-gifts-react/static/js/main.b636b156.chunk.js"
   },
   {
     "revision": "e84f2f7e20057de2fcfe",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/georgia-gifts-react/static/css/main.00668737.chunk.css",
-    "main.js": "/georgia-gifts-react/static/js/main.4eb4fabe.chunk.js",
-    "main.js.map": "/georgia-gifts-react/static/js/main.4eb4fabe.chunk.js.map",
+    "main.js": "/georgia-gifts-react/static/js/main.b636b156.chunk.js",
+    "main.js.map": "/georgia-gifts-react/static/js/main.b636b156.chunk.js.map",
     "runtime-main.js": "/georgia-gifts-react/static/js/runtime-main.5d34e7fd.js",
     "runtime-main.js.map": "/georgia-gifts-react/static/js/runtime-main.5d34e7fd.js.map",
     "static/css/2.1f057938.chunk.css": "/georgia-gifts-react/static/css/2.1f057938.chunk.css",
     "static/js/2.7c433c60.chunk.js": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js",
     "static/js/2.7c433c60.chunk.js.map": "/georgia-gifts-react/static/js/2.7c433c60.chunk.js.map",
     "index.html": "/georgia-gifts-react/index.html",
-    "precache-manifest.d52c0d3c19fe6f7fb90367795a28618f.js": "/georgia-gifts-react/precache-manifest.d52c0d3c19fe6f7fb90367795a28618f.js",
+    "precache-manifest.ec8664b7763c295099e1d8e656a824c7.js": "/georgia-gifts-react/precache-manifest.ec8664b7763c295099e1d8e656a824c7.js",
     "service-worker.js": "/georgia-gifts-react/service-worker.js",
     "static/css/2.1f057938.chunk.css.map": "/georgia-gifts-react/static/css/2.1f057938.chunk.css.map",
     "static/css/main.00668737.chunk.css.map": "/georgia-gifts-react/static/css/main.00668737.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.1f057938.chunk.css",
     "static/js/2.7c433c60.chunk.js",
     "static/css/main.00668737.chunk.css",
-    "static/js/main.4eb4fabe.chunk.js"
+    "static/js/main.b636b156.chunk.js"
   ]
 }
