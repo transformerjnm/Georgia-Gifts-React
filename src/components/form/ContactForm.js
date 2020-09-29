@@ -1,6 +1,6 @@
 import React, {Fragment, Component} from 'react';
 import styles from './contactForm.module.scss';
-import { Button, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormFeedback, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap';
 
 class ContactForm extends Component {
     state = {
@@ -9,6 +9,7 @@ class ContactForm extends Component {
         helpMsg: null,
         productType: null,
         requestMsg: null,
+        modalOpen: false,
         errors: {
             name: null,
             email: null,
@@ -44,8 +45,10 @@ class ContactForm extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        alert(`Thank you ${this.state.name}. We will get in touch with you at ${this.state.email}.`);
+        this.toggleModal();
     }
+
+    toggleModal = () => this.setState({ modalOpen: !this.state.modalOpen });
 
     render() {
         let errors = this.state.errors;
@@ -78,6 +81,20 @@ class ContactForm extends Component {
                     </FormGroup>
                     <Button type="submit" className="btn">Submit</Button>
                 </Form>
+                <Modal isOpen={this.state.modalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}><h4>We will be in contact with you shortly.</h4></ModalHeader>
+                    <ModalBody>
+                        <h4>Contact Request</h4>
+                        <span><b>Your Name:</b> {this.state.name}</span><br></br>                  
+                        <span><b>Your Email:</b> {this.state.email}</span><br></br><br></br>
+                        <span><b>What you need help with:</b><br></br> {this.state.helpMsg}</span><br></br><br></br>
+                        <span><b>Product Type:</b> {this.state.productType}</span><br></br>
+                        <span><b>Custom Product Request:</b><br></br> {this.state.requestMsg}</span>
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button color="secondary" onClick={this.toggleModal}>Close</Button>
+                    </ModalFooter>
+                </Modal>
             </Fragment>
         );
     };

@@ -47,7 +47,7 @@ const Cart = (props) => {
                 {cartProductsDisplay}            
                 <Row className="mt-5" ><Col className="text-right"><p> Total: ${total.toFixed(2)} </p></Col></Row>
                 <Row className="mt-5" ><Col className="text-right"><p> Total After Tax(7%): ${( total * 1.07 ).toFixed( 2 )}</p></Col></Row>
-                <CheckoutForm />        
+                <CheckoutForm total={total}/>        
             </Fragment>
         );
         }

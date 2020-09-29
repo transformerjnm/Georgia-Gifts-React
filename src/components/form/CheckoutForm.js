@@ -1,6 +1,6 @@
 import React, {Fragment, Component} from 'react';
 import styles from './contactForm.module.scss';
-import { Button, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormFeedback, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap';
 
 class ContactForm extends Component {
     state = {
@@ -12,6 +12,7 @@ class ContactForm extends Component {
         cardNum: null,
         cardDate: null,
         cardCvv: null,
+        modalOpen: false,
         errors: {
             name: null,
             email: null,
@@ -50,8 +51,10 @@ class ContactForm extends Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        alert(`Thank you ${this.state.name}. Your Order will be shipped soon. Email confirmation will be sent to ${this.state.email}.`);
+        this.toggleModal();
     }
+
+    toggleModal = () => this.setState({ modalOpen: !this.state.modalOpen });
 
     render() {
         let errors = this.state.errors;
@@ -88,6 +91,22 @@ class ContactForm extends Component {
                     </FormGroup>
                     <Button type="submit" className="btn">Submit</Button>
                 </Form>
+                <Modal isOpen={this.state.modalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}><h4>Thank you for shopping with us!</h4></ModalHeader>
+                    <ModalBody>
+                        <span>You will receive a <b>tracking number</b> at <b>{this.state.email}</b></span><br></br>
+                        <h4>Order Info</h4>
+                        <span><b>Order's Name:</b> {this.state.name}</span><br></br>
+                        <span><b>Shipping Address:</b> {this.state.sAddress}</span><br></br>                     
+                        <span><b>Order's Email:</b> {this.state.email}</span><br></br>
+                        <span><b>total:</b> ${this.props.total}</span><br></br>
+                        <span><b>Card Name:</b> {this.state.cardName}</span><br></br>
+                        <span><b>Billing Address:</b> {this.state.bAddress}</span><br></br>                  
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button color="secondary" onClick={this.toggleModal}>Close</Button>
+                    </ModalFooter>
+                </Modal>
             </Fragment>
         );
     };
