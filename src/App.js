@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
   return ( 
     <Fragment>
-		<BrowserRouter>
+		<BrowserRouter basename="/georgia-gifts-react">
     		<Header /> 	
         	<MainContent />    	
       		<Footer />
